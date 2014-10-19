@@ -1,0 +1,20 @@
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0 10px;
+}
+body {
+  max-width: 600px;
+  margin: 60px auto;
+}
+p {
+  font-size: 1.2em;
+}
+h1 {
+  font-size: 3em;
+}
+a:visited {
+  color: royalblue;
+}
+a {
+  color: royalblue;
+}
