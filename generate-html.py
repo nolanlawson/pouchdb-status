@@ -133,11 +133,11 @@ envs = {
 def getResultImg(result):
   return 'passing.svg' if result == 0 else 'failing.svg' if result != None else 'unknown.svg'
 
-builds = requests.get('https://api.travis-ci.org/pouchdb/pouchdb/builds?event_type=push').json();
+builds = requests.get('https://api.travis-ci.org/repositories/pouchdb/pouchdb/builds.json?event_type=push').json();
 
 last_build_id = builds[0]['id'];
 
-status = requests.get('https://api.travis-ci.org/pouchdb/pouchdb/builds/' + str(last_build_id)).json();
+status = requests.get('https://api.travis-ci.org/repositories/pouchdb/pouchdb/builds/%s.json' % (last_build_id));
 
 print '''
 <html>
