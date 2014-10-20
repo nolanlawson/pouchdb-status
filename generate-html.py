@@ -118,7 +118,7 @@ envs = {
   },
   "CLIENT=node SERVER=couchdb-master COMMAND=test": {
    "name": "Node.js",
-   "adapter": "MemDOWN",
+   "adapter": "LevelDB",
    "note": "Using CouchDB master",
    "img": "nodejs_32x32.png" 
   },
